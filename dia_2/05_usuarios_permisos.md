@@ -245,12 +245,12 @@ la terminal.
 
 | **Opciones** | **Descripción** |
 |:------------:|-----------------|
-| -d , --home-dir | Establece el directorio de inicio del usuario. |
-| -s , --shell | Establece el shell del usuario. |
-| -u , --uid | Asigna el ID de usuario (UID). |
-| -U | Crea un grupo con el mismo nombre que el usuario y agregue el usuario a este grupo. (user-group). |
-| -m , --create-home | Crea el directorio personal (home) del usuario si no existe. |
-| -p , --password | Asigna una contraseña al usuario nuevo. |
+| -d<br>--home-dir | Establece el directorio de inicio del usuario. |
+| -s<br>--shell | Establece el shell del usuario. |
+| -u<br>--uid | Asigna el ID de usuario (UID). |
+| -U | Crea un grupo con el mismo nombre que el usuario <br> y agregue el usuario a este grupo. (user-group). |
+| -m<br>--create-home | Crea el directorio personal (home) del usuario si no existe. |
+| -p<br>--password | Asigna una contraseña al usuario nuevo. |
 
 ```admonish note title="Nota"
 Se necesitan permisos de super usuario.
@@ -280,10 +280,10 @@ Para asignar contraseña a un usuario utilizamos el comando `passwd`.
 
 | **Opción** | **Descripción** |
 |:----------:|-----------------|
-| -d , --delete | Elimina la contraseña del usuario. |
-| -l , --lock | Permite bloquear la contraseña del usuario.|
-| -x , --maxdays | Determina después de cuántos días debe renovarse una contraseña. |
-| -w , --warndays | Avisa al usuario que la contraseña esta apunto de caducar. |
+| -d<br>--delete | Elimina la contraseña del usuario. |
+| -l<br>--lock | Permite bloquear la contraseña del usuario.|
+| -x<br>--maxdays | Determina después de cuántos días debe renovarse una contraseña. |
+| -w<br>--warndays | Avisa al usuario que la contraseña esta apunto de caducar. |
 ```admonish note title="Nota"
 Se necesitan permisos de super usuario.
 ```
@@ -317,7 +317,7 @@ Para eliminar un usuario utilizaremos el comando `userdel`
 ```
 | **Opción** | **Descripción** |
 |:----------:|-----------------|
-| -r , --remove | Borra el directorio de inicio del usuario /home/usuario .|
+| -r<br>--remove | Borra el directorio de inicio del usuario /home/usuario .|
 
 ```admonish note title="Nota"
 Se requieren permisos de superusuario
@@ -383,8 +383,8 @@ Para crear un nuevo grupo usaremos el comando `groupadd`
 
 | **Opción** | **Descripción** |
 |:----------:|-----------------|
-| -g , --gid | Asigna un identificador (GID) al grupo. |
-| -p , --passwdord | Asigna una contraseña al grupo.   |
+| -g<br>--gid | Asigna un identificador (GID) al grupo. |
+| -p<br>--passwdord | Asigna una contraseña al grupo.   |
 
 ```admonish note title="Nota"
 Se requieren permisos de superusuario.
