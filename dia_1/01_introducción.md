@@ -1,78 +1,16 @@
 # Introducción
 
-# Bienvenidos al Curso terminal GNU/LINUX Nivel cero
-
-Algunos datos sobre este curso:
-
--   Esta es la tercera edición con este formato.
-
--   Impartido por miembros del **Laboratorio de Supercómputo y
-    Visualización en Paralelo**
-
->El Laboratorio de Supercómputo y Visualización en Paralelo (LSVP) de la
->División de Ciencias Básicas e Ingeniería (DCBI) de la Universidad
->Autónoma Metropolitana Unidad Iztapalapa (UAM-I), inició su
->funcionamiento a finales de 1993.
->
->El Laboratorio tiene como finalidad apoyar el trabajo de investigación
->que requiere de cómputo científico de alto rendimiento en - Física - Química - >
->Matemáticas - ingeniería
->
->![Bienvenida](./images/bienvenida/lsvp.jpeg)
-
->El núcleo del laboratorio es el cluster **Yoltla (Yoltlamaltini)** 
->Cuyo nombre 
->
->significa ***"semillero del saber o conocimiento"***
->
->![bienvenida/yoltla](./images/bienvenida/yoltla.jpg)
-
--   El cluster Yoltla Está hecho con linux
-
-    -   Se requiere linux para administrarlo
-    -   Se requiere linux para utilizar los recursos
-
--   Parte de la administración y mantenimiento del laboratorio se
-    realiza por alumnos de licenciatura.
-
--   Se realizan actividades como
-
-    -   Implementación de nuevos servicios
-    -   Mantenimientos preventivos
-    -   Optimización de aplicaciones científicas
-    -   Se imparten cursos
-
-## Instructores para este curso {#_instructores_para_este_curso}
-
-Los miembros del laboratorio que van a dar este curso
-
--   Daniella Librado Serrano
--   Diego Morales Serrano
--   Eduardo Morgado Velázquez
--   Luis Fernando Torres Hernández
--   Omar Juárez Merino
-
-## Demografía del curso {#_demografía_del_curso}
-
-Esta es la demografía para este curso
-
-![Demografia](./images/bienvenida/demografia.png)
-
-## Introducción {#_introducción}
-
 La palabra clave es
 
-**HERRAMIENTA**
+__**HERRAMIENTA**__
 
-<!--:   [HERRAMIENTA]{..underline}-->
+Ideas relacionadas con herramientas:
+- La herramienta adecuada para cada trabajo.
+- Perfeccionamiento de habilidades.
+- Cuidados.
+- Personalizable.
 
-Piensen en la relación que tienen con su herramientas
-
--   Cuidados
--   Perfeccionamiento de habilidades
--   Personalización
-
-### El sistema operativo GNU/LINUX es una herramienta {#_el_sistema_operativo_gnu_linux_es_una_herramienta}
+### El sistema operativo GNU/LINUX es una herramienta
 
 **¿Qué es un sistema operativo?**
 
@@ -87,71 +25,102 @@ Piensen en la relación que tienen con su herramientas
     simple y comprensible para los programadores o usuarios.
 ```
 
-### Algunas características del SO GNU/LINUX {#_algunas_características_del_so_gnu_linux}
+### Algunas características del SO GNU/LINUX
 
-Y por qué les puede resultar útil aprender a usar esta herramienta.
+... Y por qué les puede resultar útil aprender a usar esta herramienta.
 
-***Es eficiente y versátil*** \
-Útil para cualquier equipo de computo
+***Es de código abierto y gratuito*** \
+Se puede aprender del código fuente, se puede modificar,
+   sujeto al escrutinio (importante para la libertad).
 
-***Es consistente*** \
-Fácil de aprender.
+***Multiplataforma*** \
+Funciona en muchos dispositivos:
+- Computadoras personales
+- Servidores
+- Smartphones
+- Computadores de una placa
+- Consolas de videojuegos
 
-***Es un desarrollo de software libre y código abierto*** \
-Importante para su libertad
+***Estabilidad y seguridad*** \
+...Con sus respectivas condiciones.
+
+***Personalizable*** \
+Para distintos tipos de uso.
 
 ***Tiene una estrecha relación con las universidades y el software científico***\
-Para su desarrollo profesional
+Para su desarrollo profesional.
 
-### ¿Qué significa aprender a utilizar el SO GNU/Linux? {#_qué_significa_aprender_a_utilizar_el_so_gnu_linux}
+Personalmente
+- Lo que me gusta
+   - Está hecho para humanos.
+   - Fácil comprensión de la estructura.
+   - Uno tiene el control.
+   - Sin antivirus.
+- Lo que no me gusta
+   - Poco soporte por parte de algunos desarrolladores
+   - Relación amor/odio con software privativo.
+   - Actualizaciones que rompen el sistema.
+
+### ¿Qué significa aprender a utilizar el SO GNU/Linux?
 
 ```admonish note title="De acuerdo al uso que se le da"
--   Uso General
+- Uso General
+   - Navegar en Internet
+   - Visualizar archivos multimedia
+   - Editar archivos de office
 
-    -   Navegar en Internet
-    -   Visualizar archivos multimedia
-    -   Editar archivos de office
+- Uso académico o profesional
+   - Instalar y usar aplicaciones de software libre
+   - Aplicaciones científicas.
+   - Aplicaciones de desarrollo de software.
+   - Aplicaciones de producción multimedia.
 
--   Uso académico o profesional
-
-    -   Instalar y usar aplicaciones de software libre
-    -   Aplicaciones científicas.
-    -   Aplicaciones de desarrollo de software.
-    -   Aplicaciones de producción multimedia.
-
--   El SO linux como camino profesional
-
-    -   Administrar instancias de computo en la nube.
-    -   Administrar infraestructura para desarrollo de software.
-    -   Administrar clusters de supercómputo.
+- El SO GNU/linux como camino profesional
+   - Administrar instancias de computo en la nube.
+   - Administrar infraestructura para desarrollo de software.
+   - Administrar clusters de supercómputo.
 ```
 
-### Formas de interactuar con el SO {#_formas_de_interactuar_con_el_so}
-
+### Formas de interactuar con el SO
 -   Interfaz gráfica de usuario (GUI)
 -   Interfaz por linea de comandos (CLI)
 
-### Algunos conceptos importantes {#_algunos_conceptos_importantes}
+> En un sistema GNU/Linux la forma principal de interacción es por linea de comandos.
 
-![Terminal](./images/bienvenida/terminal.png)
 
--   Terminal
+### Algunos conceptos importantes
 
-    -   Emulador de terminal
-    -   Ventana de terminal
+#### Terminal
+![Terminal](./images/introduccion/terminal.png)
 
--   Interprete de comandos (Shell)
+Uso original de las terminales
+![servidor-terminal](./images/introduccion/server-terminal.png)
 
-    -   sh
-    -   **Bash**
-    -   tcsh
-    -   kornsh
-    -   zsh
-    -   fish
+#### Emulador de terminal
+![emuladores](./images/introduccion/emuladores.png)
+![emulador-terminal](./images/introduccion/emulador-terminal.png)
 
-### Para empezar {#_para_empezar}
+#### Ventana de terminal
+![ventana-terminal](./images/introduccion/ventana-terminal.png)
 
-Conexión remota 
+#### Interprete de comandos
+
+- Interprete de comandos (Shell)
+   - sh
+   - **Bash**
+   - tcsh
+   - kornsh
+   - zsh
+   - fish
+
+#### Conexión remota
+##### ssh (secure shell)
+![ssh](./images/introduccion/ssh.png)
+![pts](./images/introduccion/ssh-pts.png)
+
+### Para empezar
+
+Conexión remota
 ```
     ssh usuario@direccion
 ```
