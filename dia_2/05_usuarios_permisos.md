@@ -325,51 +325,73 @@ Se requieren permisos de superusuario
 
 **Actividades**
 
+>
 >**1.** Crea un suarios llamado `lois`.
+>
 >```
 >    $ sudo useradd lois
 >```
+>
 >Verifica que el usuario ha sido creado buscando su entrada en el archivo
 >`/etc/passwd`
+>
 >```
 >    $ grep lois /etc/passwd
 >```
+>
 >**2.** Crea un usuario llamado `francis`, crea su directorio personal con la opción `-m`. 
+>
 >```
 >   $ sudo useradd -m -d /home/fracis fracis
 >```
+>
 >Comprueva que el directorio de inicio de `francis` ha sido creado.
+>
 >```
 >   $ ls /home
 >```
+>
 >**3.** Crea al usuario `stevie`, establese `/bin/bash` como shell de usuario y asignale `5025`
 > como `ID` de usuari usuario.
+>
 >```
 >   $ sudo useradd -s /bin/bash -u 5025 stevie
 >```
+>
 >Verifica que el usuario ha sido creado con las especificaciones anteriores.
+>
 >```
 >    $ grep stevie /etc/passwd
 >```
+>
 >**4.** Establece una contraseña para el usuario `lois` creado anteriormente (recuerda 
 >la contraseña).
+>
 >```
 >   $ sudo passwd lois
 >```
+>
 >Comprueba que puedes iniciar sesión como el usuario `lois` (te pedirá la contraseña
 >de `lois`).
+>
 >```
 >   $ su lois
 >```
+>
 >Regresa a tu suario con el comando `exit`.
+>
 >```
 >   $ exit
 >```
+>
 >**5.** Elimina al usuario `francis` junto con su directorio de inicio.
+>
 >```
 >   $ sudo userdel -r francis
 >```
+>
 >Verifica que el directorio de inicio `francis` ha sido eliminado.
+>
 >```
 >   $ ls /home
 >```
@@ -553,38 +575,50 @@ Este comando tambien te permite cambiar al grupo propietario del archivo
 
 **Actividades**
 
+>
 >**6.** Desde el directorio `taller/dia-2`, establece permisos de lectura y 
 >escritura para el ***propietario***, lectura para ***grupos*** y escritura
 >para ***otros*** en el archivo `file`. (Si no eres propietario del archivo, 
 >tendras que utilizar `sudo`). 
+>
 >```
 >   $ chmod 642 file
 >```
+>
 >Verifica los permisos de `file`.
+>
 >```
 >   $ ls -l file
 >```
+>
 >**7.** Asigna permisos de lectura, escritura y ejecusión para el 
 >***propietario***, lectura y ejecución para ***grupos*** y nunguno para 
 >***otros*** en el archivo `holaMundo.py`
+>
 >```
 >   $ chmod 750 holaMundo.py
 >```
+>
 >Verifica los permisos de `holaMundo.py`
 >
 >**8.** Asigna permisos de lectura, escritura y ejecución para todos los 
 >usuarios (***propietario, grupo y otros***) para el directorio `Imagenes`.
+>
 >```
 >   $ chmod 777 Imagenes
 >```
+>
 >**9.** Coloca al usuario `lois` como nuevo propietario del archivo `informe`.
+>
 >```
 >   $ sudo chown lois informe
 >```
+>
 >Verifica el cambio de propietario.
 >
 >**10.** Asigna un nuevo propietario y grupo al archivo `ejemplo.txt`, por ejemplo, 
 >cambia el propietario a `stevie` y el grupo a `lois`:
+>
 >```
 >   $ sodu chown stevie:lois ejemplo.txt
 >```
@@ -593,7 +627,10 @@ Este comando tambien te permite cambiar al grupo propietario del archivo
 >
 >**11.** Cambia el propietario del directorio `Documentos` y de todos los archivos 
 >dentro del directorio a `stevie`.
+>
 >```
 >   $ sudo chown -R stevie Documentos
 >```
+>
 >Verifica los cambios en `Documentos`.
+>

@@ -195,45 +195,64 @@ directorio actual en el que se encuentra.
 | $ mkdir -p carpeta1/carpeta2 | Crea directorios de manera recursiva. |
 
 **Actividades**
+
 >**1.** Ingresa al directorio `taller` y despliega su contenido en forma de lista.
+>
 >```
 >   $ ls -l
 >```
+>
 >**2.** Cambia la opción para mostrar los archivos ocultos.
+>
 >```
 >    $ ls -a
 >```
+>
 >**3.** Combiana las opciones para listar los archivos ocultos.
+>
 >```
 >    $ ls -la
 >```
+>
 >**4.** Crea los siguientes directorios `proyecto/linux/basico`.
+>
 >```
 >   $ mkdir -p proyecto/linux/basico
 >```
+>
 >**5.** Ingresa a `proyecto`.
+>
 >```
 >   $ cd proyecto
 >```
+>
 >**6.** Desde `proyecto`, muevete al directorio `linux/basico`.
+>
 >```
 >   cd linux/basico
 >```
+>
 >**7.** Desde `basico`, regresa al directorio `proyecto`.
+>
 >```
 >   1. $ cd ../..
 >   2. $ cd ~/taller/proyecto
 >```
+>
 >**8.** Dentro de `taller`, crea los siguientes directorios: `dir1`, `dir2`, `dir3` y `dir4`.
+>
 >```
 >   1. $ mkdir dir1 dir2 dir3 dir4     
 >   2. $ mkdir ~/taller/dir1 ~/taller/dir2 ~/taller/dir3 ~/taller/dir4         (si te encuentras en otro directorio)
 >```
+>
 >**9.** Verifica que los tres directorios fueron creados con `ls`.
+>
 >```
 >   1. $ ls         (si te encuentras en taller)
 >   2. $ ls ~/taller
 >```
+>
 
 ### ¿Y los archivos? *`(touch)`* 
 
@@ -288,31 +307,43 @@ Con **mv** también podemos renombrar un archivo o directorio.
 **Actividades**
 
 >**10.** Ingresa al directorio `dir1` y crea los archivos `file.txt` y `documento` (verifica que se creen los archivos).
+>
 >```
 >   1. cd ~/taller/dir1
 >   2. touch file.txt documento
 >```
+>
 >**11.** Crea una copia de `file.txt`, nómbrala `file2.txt`.
+>
 >```
 >   $ cp file.txt file2.txt
 >```
+>
 >**12.** Copia el archivo `documento` en `proyecto`.
+>
 >```
 >   $ cp documento ~/taller/proyecto
 >```
+>
 >**13.** Copia el directorio `proyecto` en `dir2`.
+>
 >```
 >   $ cp -r ~/taller/proyecto ~/taller/dir2
 >```
+>
 >**14.** Desde el directorio `dir1`, mueve el archivo `file.txt` al directorio `dir3`.
+>
 >```
 >   1. $ mv file.txt ../dir3   
 >   2. $ mv file.txt ~/taller/dir3
 >```
+>
 >**15.** Renombra el archivo `documento` a `ejercicio`. 
+>
 >```
 >   $ mv documento ejercicio
 >```
+>
 
 ### Eliminar un directorio vacío *`(rmdir)`* 
 
@@ -410,37 +441,52 @@ Encontrar los archivos que comiencen con `doc` en un directorio.
 ```
 
 **Actividades**
+>
 >**16** Desde `taller`, elimina el directorio `dir4` (directorio vacio).
+>
 >```
 >   $ rmdir dir4
 >```
+>
 >**17** Elimina el directorio `basico`, se encuentra en `proyecto/linux` (directorio vacio).
+>
 >```
 >   $ rmdir proyecto/linux/basico
 >```
+>
 >**18** Elimina el archivo `file2.txt` del directorio `dir1`.
+>
 >```
 >   $ rm dir1/file.txt
 >```
+>
 >**19** Elimina el directorio `proyecto`
+>
 >```
 >   $ rm -r proyecto
 >
 >Recuerda que al tratarse de un directorio no vacío, se elimina de manera recursiva (-r).
 >```
+>
 >**20** Ingresa al directorio `taller/dia-1` y muestra el contenido de `Dewey`.
+>
 >```
 >   1. $ cat Dewey
 >   2. $ less Dewey
 >```
+>
 >**21** Muestra el contenido de `Dewey` y `frases` en una sola instrucción. 
+>
 >```
 >   $ cat Dewey.txt frases.txt
 >```
+>
 >**22** Encuentra los archivos que comiencen con `eje` y terminen con `.txt` en el directorio `taller`.
+>
 >```
 >   $ find ~/taller -name 'eje*.txt'
 >```
+>
 
 ### Limpiemos la pantalla 
 
