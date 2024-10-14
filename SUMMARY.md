@@ -6,11 +6,11 @@
     - [Sistemas de archivos](./dia_1/02_sistemas_archivos.md)
     - [Comandos básicos](./dia_1/03_comandos_basicos.md)
 <!---
-    - [Vim](./dia_1/04_vim.md)
 
 - [Día 2]()
     - [Usuarios, grupos y permisos](./dia_2/05_usuarios_permisos.md)
     - [Procesos ](./dia_2/06_procesos.md)
+    - [Vim](./dia_2/04_vim.md)
 
 - [Día 3]()
     - [Pipes y filtrado](./dia_3/07_pipes_filtrado.md)
