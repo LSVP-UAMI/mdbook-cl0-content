@@ -7,7 +7,6 @@
     - [Comandos básicos](./dia_1/03_comandos_basicos.md)
 
 - [Día 2]()
-    - [Procesos ](./dia_2/06_procesos.md)
     - [Usuarios, grupos y permisos](./dia_2/05_usuarios_permisos.md)
     - [Procesos ](./dia_2/06_procesos.md)
     - [Vim](./dia_2/04_vim.md)
