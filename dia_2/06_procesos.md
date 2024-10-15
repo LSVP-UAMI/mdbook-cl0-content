@@ -1,8 +1,9 @@
 # Procesos
-
-Un proceso representa un programa en ejecución. Es la abstracción a
-través de la cual se pueden administrar y monitorear la memoria, el
-tiempo de CPU y los recursos de entrada/salida.
+```admonish info title="Definición"
+>Un proceso representa un programa en ejecución. Es la abstracción a
+>través de la cual se pueden administrar y monitorear la memoria, el
+>tiempo de CPU y los recursos de entrada/salida.
+```
 
 ## Elementos
 
@@ -52,23 +53,21 @@ sistema:
 
 Para mostrar todos los procesos del sistema, ejecute el comando:
 
-    $ ps aux
-    USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-    root           1  0.0  0.0 240824 13816 ?        Ss   jun23   0:05 /usr/lib/systemd/...
-    root           2  0.0  0.0      0     0 ?        S    jun23   0:00 [kthreadd]
-    root           3  0.0  0.0      0     0 ?        I<   jun23   0:00 [rcu_gp]
-    root           4  0.0  0.0      0     0 ?        I<   jun23   0:00 [rcu_par_gp]
-    root           5  0.0  0.0      0     0 ?        I<   jun23   0:00 [slub_flushwq]
-    root           7  0.0  0.0      0     0 ?        I<   jun23   0:00 [kworker/...]
-    root           9  0.0  0.0      0     0 ?        I<   jun23   0:00 [mm_percpu_wq]
-    root          10  0.0  0.0      0     0 ?        S    jun23   0:00 [rcu_tasks_rude_]
-    ...
+```
+ps aux
+```
+
 
 ### Actividades
+``` admonish example title="Participación"
+¿Cómo muestro todos los proceso de un usuario en particular?
+```
 
-**¿Cómo muestro todos los proceso de un usuario en particular?**
-```admonish success title="Respuesta"
-    1. ps uU USUARIO
+### Otra herramienta
+Actualmente contamos con herramientas interactivas para vizualizar y administrar los procesos un ejemplo es `htop`
+
+```
+htop
 ```
 
 ## Señales
@@ -103,7 +102,7 @@ La señal INT es enviada por medio de la terminal cuando el usuario
 presiona la combinación de teclas Ctrl-C. Es una solicitud para terminar
 la ejecución actual.
 
-### Señal TERN
+### Señal TERM
 
 La señal TERM es una solicitud para terminar la ejecución completamente.
 Se espera que el proceso de receptor limpie su estado y salga.
@@ -129,24 +128,15 @@ procesos o por el superusuario en cualquier proceso.
 
 Ejecute el siguiente comando:
 ```
-    $ watch uptime &
+    watch uptime &
 ```
 para crear un nuevo proceso.
 
-1.   ¿Cómo puedo puedo verificar que el proceso está en ejecución?
+```admonish example title="Participación"
 
-2.   ¿Cómo finalizo la ejecución del proceso?
+1 ¿Cómo puedo puedo verificar que el proceso está en ejecución?
 
-```admonish success title="Respuestas"
+2 ¿Cómo finalizo la ejecución del proceso?
 
-1
-
-        ps uU USUARIO
-        ps u --pid PID`
-
-2
-
-        kill PID
-        kill -s KILL PID
 ```
 
