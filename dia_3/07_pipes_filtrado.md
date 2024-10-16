@@ -1,4 +1,4 @@
-#  Pipes 
+# Redirección y Pipes 
 
 ## Redirección {#_redirección}
 
@@ -95,15 +95,15 @@ Primero, obtengamos el material. **En tu home**, copia el directorio
 Ahora realiza las siguientes actividades.
 
 1.  Copia el contenido del archivo
-    **redireccionYPipes/poesia_artificial** al archivo
-    **/home/poesia_redireccionada** usando el comando **cat**.
+    **red_pipes/poesia_artificial** al archivo
+    **red_pipes/poesia_redireccionada** usando el comando **cat**.
 
 2.  Usa el comando **ls** con un directorio que no exista, y guarda el
     mensaje de error en un archivo.
 
 3.  Agrega la linea \"Esto es una copia de
-    redireccionYPipes/poesia_artificial\" al final del archivo
-    **~/poesia_redireccionada** usando el comando **echo**.
+    red_pipes/poesia_artificial\" al final del archivo
+    **red_pipes/poesia_redireccionada** usando el comando **echo**.
 
 ## Pipes {#_pipes}
 
@@ -233,7 +233,7 @@ Opción importante
 
 | <!----> | <!----> |
 |:-------:|---------|
-| `-n` | Muestra **N** líneas. |
+| `-n N` | Muestra **N** líneas. |
 
 ### Práctica {#_práctica_2}
 
@@ -285,8 +285,8 @@ Opciones de **sort**.
 
 | <!----> | <!----> |
 |:-------:|---------|
-| `-k` | **K** es la lista de campos usados en el ordenamiento. |
-| `-t` | **T** es el separador de campos.                       |
+| `-k K` | **K** es la lista de campos usados en el ordenamiento. |
+| `-t T` | **T** es el separador de campos.                       |
 | `-n` | Ordena las líneas en orden numérico.                   |
 | `-r` | Usa el orden inverso.                                  |
 
@@ -305,22 +305,34 @@ Opciones de **sort**.
     tail -n 800 datos.csv | cut -d ',' -f 2 | sort
 ```
 
+## Uniq
+
+**uniq** permite eliminar líneas idénticas consecutivas dentro de un archivo., 
+si se usa sin opciones las lineas repetidas se combinan en una sola linea.
+
+Opciones de **uniq**
+
+| <!----> | <!----> |
+|:-------:|---------|
+| `-c` | Muestra el número de veces que se repite cada línea.|
+| `-d` | Muestra solo las líneas duplicadas.|
+| `-u` | Muestra solo las líneas únicas.|
+
 ## Ejemplos prácticos {#_ejemplos_prácticos}
 
-Utilizando el archivo **heroes_information.csv**, obtener lo siguiente:
+Utilizando el archivo **datos.csv**, obtener lo siguiente:
 
-1.  ¿Cuál es el número de personajes que aparecen en el archivo?
+1.  ¿Cuál es el número de registros en el archivo?
 
-2.  ¿Cuántas mujeres hay(Female)? ¿Y cuántos hombres(Male)?
+2.  ¿Cuantos Pokemon legendarios hay?
 
-3.  Obtener únicamente las columnas con el nombre de los personajes
-    (name) y su raza (race).
+3.  Obtener únicamente las columnas con el nombre de los Pokemon
+    y su generación.
 
-4.  ¿Qué tipo de personajes hay más? ¿Buenos (good), malos (bad) o
-    neutrales (neutral)?
+4.  ¿Qué tipo de Pokemon hay más? 
 
-5.  Mostrar todas las editoriales de los personajes (sin repetirlas).
-
+5.  Mostrar todas los tipos de los Pokemon (sin repetirlas).
+<!---
 6.  Mostrar qué personajes que no tiene la información de su editorial
     (mostrar columnas de personaje y editorial).
 
@@ -365,4 +377,4 @@ Cantidad de mujeres de Marvel Comics
 
     cut -d , -f 2,3,8 heroes_information.csv | grep Female | grep "Marvel Comics"
 ```
-
+--->
