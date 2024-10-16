@@ -10,11 +10,11 @@
     - [Usuarios, grupos y permisos](./dia_2/05_usuarios_permisos.md)
     - [Procesos ](./dia_2/06_procesos.md)
 
-<!---
 - [Día 3]()
     - [Vim](./dia_3/04_vim.md)
     - [Pipes y filtrado](./dia_3/07_pipes_filtrado.md)
 
+<!---
 - [Día 4]()
     - [Instalación de paquetes.](./dia_4/08_instalacion.md)
     - [Scripts](./dia_4/09_scripts.md)
