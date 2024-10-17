@@ -14,11 +14,11 @@
     - [Vim](./dia_3/04_vim.md)
     - [Pipes y filtrado](./dia_3/07_pipes_filtrado.md)
 
-<!---
 - [Día 4]()
     - [Instalación de paquetes.](./dia_4/08_instalacion.md)
     - [Scripts](./dia_4/09_scripts.md)
 
+<!---
 - [Día 5]()
     - [Historia](./dia_5/11_historia.md)
     - [Consejos de instalación](./dia_5/12_consejos.md)
