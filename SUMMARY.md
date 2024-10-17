@@ -18,7 +18,6 @@
 - [Día 4]()
     - [Instalación de paquetes.](./dia_4/08_instalacion.md)
     - [Scripts](./dia_4/09_scripts.md)
-    - [Dispositivos](./dia_4/10_dispositivos.md)
 
 - [Día 5]()
     - [Historia](./dia_5/11_historia.md)

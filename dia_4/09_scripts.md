@@ -73,7 +73,7 @@ caracteres. Por ejemplo:
     tipo_sangre=A
     estatura=1.75
 ```
-
+<!---
 Otra manera de de asignar un valor a una variable es mediante el comando
 **read**. A continuación se muestra utilización del comando mediante un
 ejemplo:
@@ -86,14 +86,7 @@ Esto sirve para guardar en la variable *apellido* el contenido
 *Belmont*. Al pulsar la tecla Enter después del comando **read**, la
 terminal quedará a la espera de que introduzcamos el valor que
 almacenará la variable.
-
-Cuando guardamos el resultado de un comando en una variable, el comando
-va entre paréntesis y precedido de un **\$**. Ejemplo:
-```
-    $ ruta=$(pwd)
-    $ echo $ruta
-    /home/usuario
-```
+--->
 
 ```admonish note title="Nota"
 En Bash no es necesario declarar una variable, solo asignarle un valor.
@@ -112,6 +105,14 @@ Un caso particular sería:
 ```
     echo $edad
     23
+```
+
+Cuando guardamos el resultado de un comando en una variable, el comando
+va entre paréntesis y precedido de un **\$**. Ejemplo:
+```
+    $ ruta=$(pwd)
+    $ echo $ruta
+    /home/usuario
 ```
 
 ## Variables especiales
@@ -189,18 +190,18 @@ Para los ejercicios primero copiamos el directorio
     a.  Guarde los archivos (la ruta que regresa el comando) en un archivo
     temporal *conejos.tmp*
     ```admonish tip title="Pista"
-        find . -name conejo \> conejos.tmp
+        find . -name conejo > conejos.tmp
     ```
 
     a.  Guarde la primer entrada en una variable llamada *archivo*.
     ```admonish tip title="Pista"
-        archivo=\$(head -n 1 conejos.tmp)
+        archivo=$(head -n 1 conejos.tmp)
     ```
     
     a.  Borre el archivo que coincide con la primer entrada (y con el valor
     de la variable *archivo*).
     ```admonish tip title="Pista"
-        rm \$archivo       
+        rm $archivo       
     ```
 
     a.  Avise que se eliminó la primer coincidencia.
