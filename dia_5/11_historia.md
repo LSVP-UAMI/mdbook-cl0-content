@@ -4,44 +4,43 @@
 
 ### UNIX {#_unix}
 
-#### La cuna de UNIX: Los laboratorios Bell {#_la_cuna_de_unix_los_laboratorios_bell}
+#### UNIX Surge en los laboratorios bell
 
-**Importante** compañía de investigación y desarrollo científico,fundada
-en enero de 1925
-
-Para enfatizar aún más la palabra importante:
+- Compañía de investigación y desarrollo científico
+- Fundada en enero de 1925
 
 [Algunos premios por trabajo realizada en los laboratorios Bell o por
 gente que trabajó en
 ellos](https://en.wikipedia.org/wiki/Bell_Labs#Nobel_Prize,_Turing_Award,_IEEE_Medal_of_Honor)
 
-#### Ken thompson y Dennis Ritchie {#_ken_thompson_y_dennis_ritchie}
+![bell labs](./images/historia/bell.jpg)
+
+Por el trabajo de Ken Thompson y Dennis Ritchie
 
 ![Historia](./images/historia/KTyDR.jpg)
 
 | <!----> | **Conicido, entre muchas otras cosas, por**|
 |:-------:|--------------------------------------------|
-| Ken Thompson | * Crear el lenguaje de programación B.     * Su trabajo en el desarrollo de Go.    * La computadora de ajedrez Belle.      * **Co-crear el sistema operativo UNIX** |
-| Dennis Ritchie | * Crear el lenguaje de programación C.   * Co-escribir el libro *El lenguaje de programación C*.     * **Co-crear el sistema operativo UNIX** |
+| Ken Thompson | Crear el lenguaje de programación B </br> su trabajo en el desarrollo de Go </br> la computadora de ajedrez Belle </br> **Co-crear el sistema operativo UNIX** |
+| Dennis Ritchie | Crear el lenguaje de programación C </br> Co-escribir el libro *El lenguaje de programación C* </br> **Co-crear el sistema operativo UNIX** |
 
-
-video::XvDZLjaCJuw\[youtube,start=198,end=314,lang=es,align=center\]
+[video Dennis Ritchie, Ken Thompson](https://youtu.be/XvDZLjaCJuw?si=tLF366qZMGd0Seog&t=194)
 
 ***Linea del tiempo de UNIX***
 
 | **Año** | **Evento** |
 |:-------:|------------|
 | 1964    | Desarrollo de Multics |
-| 1969        | Primera implementación de UNIX para [PDP-7](https://www.youtube.com/watch?v=pvaPaWyiuLA&t=1s) |
+| 1969    | Primera implementación de UNIX para [PDP-7](https://www.youtube.com/watch?v=pvaPaWyiuLA&t=1s) |
 | 1970    | Unix fue implementado PDP-11 *En ensamblador* |
 | 1971    | Primera edición oficial de UNIX |
 | 1972    | Se escribe Unix *en C*          |
-| 1975    | Sexta edición de UNIX  * La primera edición que se uso ampliamente fuera de AT&T   * licenciada para universidades a cambio de una cuota nominal por distribución.   * contenía: (* Documentación,   * **Código fuente del Kernel**)|
+| 1975    | Sexta edición de UNIX  <br/> La primera edición que se uso ampliamente fuera de AT&T </br> Licenciada para universidades a cambio de una cuota nominal por distribución.</br>  Contenía:</br> Documentación </br> **Código fuente del Kernel**|
 | 1982    | Ruptura del sistema Bell        |
 
 ![UNIX System](./images/historia/unix.jpg)
 
-### GNU {#_gnu}
+### GNU
 
 GNU
 
@@ -80,19 +79,18 @@ Conocido entre muchas otras cosas por:
     mejoras a los demás, de modo que toda la comunidad se beneficie
     (mejora).
 
-video::8SdPLG-\_wtA\[youtube,start=58,end=367,lang=es,align=center\]
-
-Entre los programas más conocidos producidos por GNU están
+[Video Richard Stallman](https://youtu.be/8SdPLG-_wtA?si=kKQ8U5wPxYKC17yU&t=58 "stallman")
 
 ![Stallman-UAM](./images/historia/stallman_uam.jpeg) 
 
+##### Linea del tiempo de GNU
+
 | **Año** | **Evento** |
 |:-------:|------------|
-| 1984 | * Richard Stallman empieza a trabajar en un sistema UNIX libre,   * Inicia el proyecto [GNU](https://www.gnu.org/home.es.html) |
-| 1985 | * Stallman funda la [FSF](https://www.fsf.org/),   * Desarrollo de la [licencia GPL](https://es.wikipedia.org/wiki/GNU_General_Public_License)|
-| 1990 | * El proyecto GNU había producido un sistema operativo casi completo |
+| 1984 | Richard Stallman empieza a trabajar en un sistema UNIX libre,   </br> Inicia el proyecto [GNU](https://www.gnu.org/home.es.html) |
+| 1985 | Stallman funda la [FSF](https://www.fsf.org/)   </br> Desarrollo de la [licencia GPL](https://es.wikipedia.org/wiki/GNU_General_Public_License)|
+| 1990 | El proyecto GNU había producido un sistema operativo casi completo |
 
-***Linea del tiempo de GNU***
 
 ### Linux {#_linux}
 
@@ -123,8 +121,7 @@ Entonces este post podría ser para ti :-)  ...
 | 1991 | Linus torvalds solicita ayuda de otros programadores anunciando su kernel 0.02 en comp.os.minix |
 | 1992 | la versión [0.12](https://mirrors.edge.kernel.org/pub/linux/kernel/Historic/old-versions/RELNOTES-0.12) empieza a utilizar la licencia gpl |
 
--   [tiene un desarrollo muy
-    activo](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/about/)
+-   [tiene un desarrollo muy activo](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/about/)
 
 ### GNU/LINUX {#_gnu_linux}
 
@@ -133,9 +130,9 @@ Entonces este post podría ser para ti :-)  ...
 ***Linea del timpo de GNU/LINUX***
 | **Año** | **Evento** |
 |:-------:|------------|
-| 1992 | primera distribución de linux |
-| 1993 | surge slackware, Suse, Redhat, Debian [link](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg)|
-| 2004 | aparece ubuntu |
+| 1992 | Primera distribución de linux |
+| 1993 | Surge slackware, Suse, Redhat, Debian [link](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg)|
+| 2004 | Aparece ubuntu |
 | 2022 | CentOS 8 es descontinuado |
 
 [Top500](https://www.top500.org/statistics/details/osfam/1)
