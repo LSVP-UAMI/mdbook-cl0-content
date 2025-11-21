@@ -19,4 +19,9 @@
     - [Scripts](./dia_4/09_scripts.md)
 - [Día 5]()
     - [Historia](./dia_5/11_historia.md)
-    - [Consejos de instalación](./dia_5/12_consejos.md)
+    - [Consejos de instalación]()
+    - [Visita]()
+
+- [Día 6]()
+    - [Historia](./dia_5/11_historia.md)
+    - [Procesos](./dia_2/06_procesos.md)
