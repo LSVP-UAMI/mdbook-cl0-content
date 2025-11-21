@@ -22,3 +22,7 @@
     - [Historia](./dia_5/11_historia.md)
     - [Consejos de instalación]()
     - [Visita]()
+
+- [Día 6]()
+    - [Historia](./dia_5/11_historia.md)
+    - [Procesos](./dia_2/06_procesos.md)
