@@ -1,27 +1,21 @@
 # SUMMARY
 
 - [Día 1]()
-    - [Bienvenida](./dia_1/00_bienvenida.md)
     - [Introduccíon](./dia_1/01_introducción.md)
-    - [Sistemas de archivos](./dia_1/02_sistemas_archivos.md)
-    - [Comandos básicos](./dia_1/03_comandos_basicos.md)
-
+    - [SSH](./dia_1/02_ssh.md)
+    - [Sistemas de archivos](./dia_1/03_sistemas_archivos.md)
+    
 - [Día 2]()
-    - [Usuarios, grupos y permisos](./dia_2/05_usuarios_permisos.md)
-    - [Procesos ](./dia_2/06_procesos.md)
-
+    - [Comandos básicos](./dia_2/04_comandos_basicos.md)
+    - [Instalación de paquetes.](./dia_2/05_instalacion_de_paquetes.md)
+    
 - [Día 3]()
-    - [Vim](./dia_3/04_vim.md)
-    - [Pipes y filtrado](./dia_3/07_pipes_filtrado.md)
+    - [Procesos ](./dia_3/06_procesos.md)
+    - [Filtrado](./dia_3/07_filtrado.md)
+    
 
 - [Día 4]()
-    - [Instalación de paquetes.](./dia_4/08_instalacion.md)
-    - [Scripts](./dia_4/09_scripts.md)
-- [Día 5]()
-    - [Historia](./dia_5/11_historia.md)
-    - [Consejos de instalación]()
-    - [Visita]()
+    - [Scripts](./dia_4/08_scripts.md)
+    - [Visita guiada]()
 
-- [Día 6]()
-    - [Historia](./dia_5/11_historia.md)
-    - [Procesos](./dia_2/06_procesos.md)
+    
