@@ -4,7 +4,7 @@
 
 Algunos datos sobre este curso:
 
--   Esta es la cuarta edición con este formato.
+-   Esta es la quinta edición con este formato (La primera en 2023).
 
 -   Impartido por miembros del **Laboratorio de Supercómputo y
     Visualización en Paralelo**
@@ -24,22 +24,19 @@ En el LSVP se encuentra una de las supercomputadoras más poderosas del país:
 
 > El cluster **Yoltla (Yoltlamaltini)**
 
-Que significa
-
-> **"Semillero del saber o conocimiento"**</p>
-
 ![bienvenida/yoltla](./images/bienvenida/yoltla.jpg)
 
+- Cluster para investigación científica.
 - Yoltla usa linux
-   - Se requiere linux para administrarlo
-   - Se requiere linux para utilizar los recursos
+   - Para administrarlo
+   - Para utilizar los recursos de computo
 
 - En la administración de Yoltla participan alumnos de la UAM (Miembros del LSVP)
-- Se realizan actividades como:
+- Realizan actividades como:
     - Implementación de nuevos servicios.
     - Mantenimiento del cluster.
     - Optimización de aplicaciones científicas.
-    - Impartición de cursos.
+    - **Impartición de cursos**.
 
 ## Instructores para este curso
 
@@ -48,9 +45,4 @@ Los miembros del laboratorio que van a dar este curso
 -   Diego Morales Serrano
 -   Luis Fernando Torres Hernández
 -   Omar Juárez Merino
-
-## Demografía del curso
-
-Esta es la demografía para este curso
-
-![Demografia](./images/bienvenida/demografia.png)
+-   Erick Ricardo Martinez Martinez
