@@ -441,6 +441,7 @@ Encontrar los archivos que comiencen con `doc` en un directorio.
 ```
 
 **Actividades**
+
 >
 >**16** Desde `taller`, elimina el directorio `dir4` (directorio vacio).
 >
@@ -465,8 +466,8 @@ Encontrar los archivos que comiencen con `doc` en un directorio.
 >```
 >   $ rm -r proyecto
 >
->Recuerda que al tratarse de un directorio no vacío, se elimina de manera recursiva (-r).
 >```
+>Recuerda que al tratarse de un directorio no vacío, se elimina de manera recursiva (-r).
 >
 >**20** Ingresa al directorio `taller/dia-1` y muestra el contenido de `Dewey`.
 >
@@ -504,8 +505,3 @@ borrará por completo el contenido de la terminal.
 
 La mayoría de los shells mantienen un historial de comandos previos, lo
 que facilita la recuperación y repetición de comandos anteriores.
-
-## Entrada, Salida y Error Estándar  {#_entrada_salida_y_error_estándar}
-
-![Entrada, Salida y Error](./images/filesystem/estandarComandos.png)
-***Figura 1. Entrada, Salida y Error Estándar***
