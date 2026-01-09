@@ -1,51 +1,55 @@
 # Introducción
 
-- ¿Por qué quermos aprender a usar Linux?
-- ¿Por qué quermos aprender a usar la terminal de Linux?
+- ¿Quién Utiliza Linux?
+- ¿Por qué aprender a usar Linux?
+- ¿Por qué aprender a usar la terminal de Linux?
 
 La palabra clave es
 
 __**HERRAMIENTA**__
 
 Ideas relacionadas con herramientas:
+- Reduce el esfuerzo.
+- Ahorra tiempo.
 - La herramienta adecuada para cada trabajo.
-- Perfeccionamiento de habilidades.
-- Cuidados.
-- Control sobre la herramienta.
+- Una herramienta se Cuida.
+- Una herramienta se personaliza.
 
 ### El sistema operativo GNU/LINUX es una herramienta
 
 **¿Qué es un sistema operativo?**
 
 ```admonish note title="posibles respuestas"
+-   Una colección de aplicaciones que hacen que una computadora sea más
+    simple y comprensible para los programadores o usuarios.
 -   Un software que controla los recursos de la computadora:
-
     -   La memoria de la computadora
     -   los elementos que hacen procesamiento
     -   los dispositivos conectados a la computadora
 
--   Una colección de aplicaciones que hacen que una computadora sea más
-    simple y comprensible para los programadores o usuarios.
 ```
-
 ### Algunas características del SO GNU/LINUX
 
-***Es de código abierto y gratuito*** \
-- Se puede aprender del código fuente, se puede modificar,
+***Es de código abierto y gratuito***
+- Se puede aprender del código fuente, se puede modificar [ src ](https://github.com/torvalds/linux)
+- Es un esfuerzo colectivo (más de 25,000 personas) [ estadísticas ]( https://insights.linuxfoundation.org/project/korg/contributors?timeRange=past365days&start=2025-01-08&end=2026-01-08 )
 - Sujeto al escrutinio (importante para la libertad).
 
 ***Multiplataforma*** \
 Funciona en muchos dispositivos:
 - Computadoras personales
-- Servidores
+- [ Servidores ]( https://top500.org/statistics/list/ )
 - Smartphones
-- Sistemas minimos
+- Sistemas mínimos
 - Consolas de videojuegos
 
+![cloud](./images/introduccion/cloud.png)
+
 ***Estabilidad y seguridad*** \
-De acuerdo al uso que se le quiera dar (La herramienta adecuada para la tearea adecuada).
+De acuerdo al uso que se le quiera dar (La herramienta adecuada para la tarea adecuada).
 
 ***Personalizable*** \
+Es modular (fomenta la creatividad)
 Para distintos tipos de uso.
 
 ***Tiene una estrecha relación con las universidades y el software científico***\
@@ -56,12 +60,11 @@ Personalmente
    - Está hecho para humanos.
    - Fácil comprensión de la estructura general.
    - Uno tiene el control.
+   - Tus programas viven [ mejor ]( ./images/introduccion/holapy.png )
 - Lo que no me gusta
    - Poco soporte por parte de algunos desarrolladores
    - Relación amor/odio con software privativo.
    - Actualizaciones que rompen el sistema.
-
-¿Algún otro gusto o disgusto?
 
 ### ¿Qué significa aprender a utilizar el SO GNU/Linux?
 
@@ -78,7 +81,7 @@ Personalmente
    - Aplicaciones de producción multimedia.
 
 - El SO GNU/linux como camino profesional
-   - Admoinistrar la infraestructura de un centro de datos.
+   - Administrar la infraestructura de un centro de datos.
    - Administrar clusters de supercómputo.
    - Administrar instancias de computo en la nube.
    - Administrar infraestructura para desarrollo de software.
@@ -91,12 +94,20 @@ Personalmente
 > En un sistema GNU/Linux la forma principal de interacción es por linea de comandos.
     La forma secundaria es por interfaces gráficas.
 
+> Los elementos clave para aprender linux es 
+> - Sistema de archivos
+> - texto
+
 ### Algunos conceptos importantes
+
+#### Kernel
+![kernel](./images/introduccion/so_kernel.png)
 
 #### Terminal
 ![Terminal](./images/introduccion/terminal.png)
 
 Uso original de las terminales
+
 ![servidor-terminal](./images/introduccion/server-terminal.png)
 
 #### Emulador de terminal
@@ -117,3 +128,18 @@ Uso original de las terminales
    - zsh
    - fish
 
+## **Breve** historia del SO GNU/linux
+- Multics (1964)
+- Unix (1969)
+- GNU (1984)
+- LINUX (1991)
+- GNU/LINUX (1992)
+
+
+```admonish note title="En resumen"
+- GNU/Linux surge de...
+- GNU/Linux se usa en...
+- El kernel se encarga de...
+- Una terminal es...
+- Un interprete de comandos es...
+```

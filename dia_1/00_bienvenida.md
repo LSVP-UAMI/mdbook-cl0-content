@@ -2,20 +2,17 @@
 
 # Bienvenidos al Curso: Terminal GNU/LINUX Nivel cero
 
-Algunos datos sobre este curso:
+## Algunos datos sobre este curso:
 
 -   Esta es la quinta edición con este formato (La primera en 2023).
 
 -   Impartido por miembros del **Laboratorio de Supercómputo y
     Visualización en Paralelo**
 
-El Laboratorio de Supercómputo y Visualización en Paralelo (LSVP)
-inició su funcionamiento a finales de 1993.
-
-Tiene como finalidad apoyar el trabajo de investigación
-que requiere de **Cómputo científico de alto rendimiento.**
-
-Se encuentra ubicado en el primer piso del edificio I.
+## El Laboratorio de Supercómputo y Visualización en Paralelo (LSVP)
+- Inició su funcionamiento a finales de 1993.
+- El LSVP apoyar el trabajo de investigación que requiere de **Cómputo científico de alto rendimiento.**
+- Se encuentra ubicado en el primer piso del edificio I.
 
 ![Bienvenida](images/bienvenida/lsvp.jpeg)
 
@@ -42,7 +39,7 @@ En el LSVP se encuentra una de las supercomputadoras más poderosas del país:
 
 Los miembros del laboratorio que van a dar este curso
 
--   Diego Morales Serrano
 -   Luis Fernando Torres Hernández
+-   Diego Morales Serrano
 -   Omar Juárez Merino
 -   Erick Ricardo Martinez Martinez

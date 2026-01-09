@@ -1,8 +1,9 @@
 # Sistema de Archivos UNIX
+> El sistema de archivos es el corazón de un sistema tipo unix.
+
 ## ¿Qué es un sistema de archivos?
-> Un sistema de archivos es una estructura de datos que organiza la información
-> en un dispositivo de almacenamiento, como un disco duro. Transforma bloques
-> de datos en una jerarquía de directorios y archivos, facilitando su acceso y gestión.
+> - Una estructura de datos que organiza la información en un dispositivo de almacenamiento, como un disco duro.
+> - Transforma bloques de datos en una jerarquía de directorios y archivos, facilitando su acceso y gestión.
 
 
 El propósito básico de un sistema de archivos es:
@@ -11,12 +12,10 @@ El propósito básico de un sistema de archivos es:
 
 ![biblioteca](images/filesystem/biblio.svg)
 
-
-### Un sistema de archivos virtual para dominarlos a todos...
-El Sistema de archivos virtual (VFS) es la capa de abstracción que permite que
-todas las implementaciones de sistemas de archivos mantengan una única interfaz de usuario.
-
 ## Todo es un archivo
+
+¿Pero qué es un archivo?
+> Una serie de bits con nombre y tamaño y cosas parecidas.
 
 ```admonish info title="Participación"
 **¿Cúales de las siguientes cosas esperarías encontrar en un sistema de archivos?**
@@ -42,9 +41,6 @@ Algunas ventajas de este enfoque
 1. Archivos y dispositivos de Entrada/Salida (teclado,pantalla,etc.) son tan similares como es posible.
     - Los nombres de archivo y dispositivo tienen la misma sintaxis y significado, por lo que un programa que espera un nombre de archivo como parámetro puede pasar un nombre de dispositivo.
 3. Los archivos especiales están sujetos al mismo mecanismo de protección que los archivos normales.
-
-> Conclusion:
->  **Los archivos y el sistema de archivos son centrales en la filosofía UNIX**
 
 
 ## Componentes de un sistema de archivos
