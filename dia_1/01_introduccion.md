@@ -28,6 +28,7 @@ Ideas relacionadas con herramientas:
     -   los dispositivos conectados a la computadora
 
 ```
+
 ### Algunas características del SO GNU/LINUX
 
 ***Es de código abierto y gratuito***
@@ -114,6 +115,12 @@ Uso original de las terminales
 ![emuladores](./images/introduccion/emuladores.png)
 ![emulador-terminal](./images/introduccion/emulador-terminal.png)
 
+##### Ejemploes
+- [ kitty ]( https://sw.kovidgoyal.net/kitty/ )
+- [ warp ]( https://www.warp.dev/ )
+- [ gnome ]( https://help.gnome.org/gnome-terminal/ )
+
+
 #### Ventana de terminal
 ![ventana-terminal](./images/introduccion/ventana-terminal.png)
 
@@ -130,11 +137,10 @@ Uso original de las terminales
 
 ## **Breve** historia del SO GNU/linux
 - Multics (1964)
-- Unix (1969)
-- GNU (1984)
-- LINUX (1991)
+- Unix (1969) [video](https://youtu.be/tc4ROCJYbm0?si=UrFYmddijFfNnqWp)
+- GNU (1984) [video](https://youtu.be/sPrJvwIPW3M?si=Rl6O14DIDZaxZ2F6)
+- LINUX (1991) [Video](https://youtu.be/o8NPllzkFhE?si=EM5mUD02O3EYJsWT)
 - GNU/LINUX (1992)
-
 
 ```admonish note title="En resumen"
 - GNU/Linux surge de...

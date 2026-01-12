@@ -44,28 +44,33 @@ Algunas ventajas de este enfoque
 
 
 ## Componentes de un sistema de archivos
+- Namespace 
+- API 
+- Seguridad 
+- Implementación 
 
-**Namespace**
+**Namespace** (¿Cómo nombro a los archivos?)
 - Una forma de nombrar las cosas y organizarlas jerárquicamente.
 - Árbol de archivos [Árbol de archivos](#Árbol-de-archivos)
 y [pathname](#pathname)
 
-**API**
+**API** (comandos para manipulación de archivos)
 - Un conjunto de llamadas al sistema para navegación y manipulación de objetos.
 - **Comandos de navegación y manipulación de archivo.**
 - `Universal I/O Model (stdio.h)`
 
-**Modelo de seguridad**
+**Modelo de seguridad** (Permisos)
 - Un modelo para proteger, esconder y compartir cosas.
 - **Esquema de permisos.**
 
-**Implementación**
+**Implementación** (Incluida en el kernel)
 - Software para unir el modelo al hardware.
 - **Drivers o módulos del kernel.**
 
 ```admonish info title="Participación"
 - ¿Qué sistemas de archivos conoces?
 - ¿En qué contextos es importante un esquema de permisos?
+- ¿Hay que instalar el sistema de archivos?
 ```
 
 ### Árbol de archivos
@@ -78,21 +83,28 @@ jerárquica** para organizar **todos los archivos del sistema.**
 ```
 
 #### Archivos
-Conjunto de datos con un nombre asociado.
+Datos con un nombre asociado.
 
 #### Directorios
-Tipo de archivo especial cuyo contenido toma la forma de una tabla
-con nombres de archivos asociados al archivo correspondiente.
+Tipo de **archivo** especial cuyo contenido toma la forma de una tabla con
+- nombres de archivos
 
-### 
-- EL **nombre de archivo con referncia** se le llama **link**
+### Reglas
+
+- AL **nombre de archivo con referencia** se le llama **link**
 - Cada archivo puede tener multiples links (muchos nombres)
-- Un directorio puede tener links a archivos o a directorios.
+- Un directorio puede listar links a archivos o a directorios.
 - Los links a directorios establecen una jerarquia (Padres e hijos)
 
 - Cada directorio tiene al menos dos entradas
     - . (punto): link al mismo directorio
     - .. (punto-punto): link a su directorio padre
+
+
+```admonish info title="Participación"
+- Si un archivo tiene muchos nombres (links) ¿Está duplicado?
+- Si el directorio Simba está listado dentro del directorio Mufasa ¿Cuál es el directorio padre?
+```
 
 ### Pathname
 
@@ -105,7 +117,7 @@ con nombres de archivos asociados al archivo correspondiente.
 
 ***Figura 2. Representación de un pathname.***
 
-- la referencia a un archivo/directorio debe ser hecha a través de su **pathname**. 
+- la referencia a un archivo/directorio (Nombre completo) debe ser hecha a través de su **pathname**.
 
 La lista de directorios que se deben recorrer para localizar un archivo en 
 particular más el nombre de ese archivo forman un pathname o ruta.
@@ -115,6 +127,13 @@ Por ejemplo:
 ```
     /directorio1/directorio2/.../directorioN/archivo
 ```
+
+#### Caracteres especiales para escribir rutas
+|Símbolo   |Descripción   |
+|---|---|
+| /  |Hace referencia al directorio raíz y a la separación entre directorios   |
+| .  |Hace referencia al directorio actual   |
+| ..  | Hace referencia al directorio padre del directorio actual  |
 
 #### Ruta absoluta {#_ruta_absoluta}
 
@@ -127,17 +146,13 @@ directorio. Comienza con una barra inclinada ('/').
 
 ```admonish info title="Participación"
 - ¿Cuál es la ruta absoluta al archivo glob?
-```
-```admonish info title="Participación"
 - ¿Cuál es la ruta absoluta al archivo triangulo?
-```
-```admonish info title="Participación"
 - ¿Cuál es la ruta absoluta al archivo .bashrc?
 ```
 
 #### Ruta relativa {#_ruta_relativa}
 
-- Especifica la ruta desde el directorio de trabajo actual.
+- Especifica la ruta desde el directorio de trabajo actual (Tema de comandos básicos)
 - No comienza con una barra inclinada ('/').
 
 Por ejemplo desde el directorio home
@@ -147,58 +162,20 @@ Por ejemplo desde el directorio home
 
 ```admonish info title="Participación"
 - ¿Cuál es la ruta relativa del archivo glop, si estoy en el directorio "/"?
-```
-
-```admonish info title="Participación"
 - ¿Cuál es la ruta relativa del archivo notas, si estoy en el directorio home?
-```
-
-```admonish info title="Participación"
 - ¿Cuál es la ruta relativa del archivo archivo1, si estoy en el directorio colores?
-```
-
-```admonish info title="Participación"
 - ¿Cuál es la ruta relativa del directorio home, si estoy en el directorio formas?
 ```
 
-
-#### Caracteres especiales para escribir rutas
-|Símbolo   |Descripción   |
-|---|---|
-| /  |Hace referencia al directorio raíz y a la separación entre directorios   |
-| .  |Hace referencia al directorio actual   |
-| ..  | Hace referencia al directorio padre del directorio actual  |
-
-
 # Tipos de Archivos {#_tipos_de_archivos}
 
-Se contienen varios tipos de archivos:
-
--   *Archivos ordinarios:* Un archivo ordinario es un archivo en el
-    sistema que contiene datos, texto o instrucciones de programa.
-
--   *Directorios:* Archivos que son listas de otros archivos.
-
--   *dispositivos de bloque o caracter:* Se utilizan para representar un dispositivo
-    físico real, como una impresora.
-
--   *Pipes (Tuberías):* UNIX le permite vincular comandos mediante una
-    tubería. La tubería actúa como un archivo temporal que solo existe
-    para contener datos de un comando hasta que los lea otro.
-
--   *Sockets:* Es un archivo especial que permite una comunicación
-    avanzada entre procesos.
-
--   *Enlace simbólico:* El enlace simbólico se utiliza para hacer
-    referencia a algún otro archivo del sistema de archivos.
-
-- *Archivos ordinarios*: Series de bytes, Pueden contener datos, texto o instrucciones de programa.
-- *Directorios*: Contienen referencias a otros archivos (nombres de archivos)
-- *Enlace simbólico*: Distintas rutas para un mismo archivo de forma relativa.
-- Enlace duro: Distintas rutas para un mismo archivo de forma absoluta.
-- Dispositivos de bloque y caracter: Representan un dispositivo físico real, como una impresora
-- Pipes (Tuberías): para vincular comandos. La tubería actúa como un archivo temporal que solo existe para contener datos de un comando hasta que los lea otro.
-- Sockets: permite una comunicación limpia entre procesos, incluso procesos ejecutándose en otras computadoras.
+- **Archivos ordinarios**: Series de bits.
+- **Directorios**: Contienen referencias a otros archivos (nombres de archivos)
+- **Enlace simbólico**: Distintas rutas para un mismo archivo de forma relativa.
+- **Enlace duro**: Distintas rutas para un mismo archivo de forma absoluta.
+- **Dispositivos de bloque o caracter:** Se utilizan para representar un dispositivo físico real, como una impresora.
+- **Pipes (Tuberías)**: para vincular comandos. La tubería actúa como un archivo temporal que solo existe para contener datos de un comando hasta que los lea otro.
+- **Sockets**: permite una comunicación entre procesos, incluso procesos ejecutándose en otras computadoras.
 
 # Árbol del sistema
 ![Arbol sistema](images/filesystem/arbolSistemas.png)
@@ -206,33 +183,26 @@ Se contienen varios tipos de archivos:
 
 | **Directorio** | **Descripción** |
 |:--------------:|:----------------|
-| /  | El directorio raíz (/) es el directorio principal.
-| /bin (binarios)   | Contiene archivos ejecutables (programas) que son esenciales para el funcionamiento del sistema, y que son necesarios para el arranque del sistema.
-| /boot (arranque)  | Contiene archivos necesarios para el proceso de arranque del sistema, como el kernel y los archivos de configuración del gestor de arranque.
-| /dev (dispositivos)| Contiene archivos especiales que representan dispositivos del sistema, como discos, particiones y periféricos.
-| /etc (configuración) | Almacena archivos de configuración del sistema y de las aplicaciones instaladas en el sistema.
-| /home (hogar)     | Es el directorio principal de los usuarios regulares. Cada usuario tiene un subdirectorio en /home con su nombre de usuario donde pueden almacenar sus archivos personales.
-| /lib (bibliotecas) | Contiene bibliotecas compartidas necesarias para la ejecución de programas del sistema y usuario.
-| /mnt (montaje)    | Se utiliza para montar sistemas de archivos adicionales o dispositivos de almacenamiento temporalmente.
-| /proc (proceso) | Proporciona información en tiempo real sobre los procesos en ejecución y otros detalles del sistema.
-| /root     | El directorio hogar del usuario "root", que es el superusuario o administrador del sistema.
-| /bin (binarios del sistema) | Contiene archivos ejecutables esenciales para la administración del sistema, generalmente utilizados por el superusuario.
-| /tmp (temporal)   | Directorio utilizado para almacenar archivos temporales.
-| /usr (usuario)    | Contiene archivos y programas utilizados por usuarios, incluyendo binarios, bibliotecas y documentos.
-| /usr/bin  | Contiene información de instalaciones locales.
-| /usr/lib  | Almacena las bibliotecas y los archivos de datos necesarios para los programas almacenados en /usr o en otro lugar.
-| /var (variable)   | Almacena datos variables, como registros de sistemas y archivos de bases de datos, logs del sistema.
+| /                     | directorio principal.
+| /bin (binarios)       | Contiene **programas** para el funcionamiento del **sistema**.
+| /boot (arranque)      | Contiene archivos para el proceso de arranque del sistema, como el **kernel** y los archivos de **configuración del gestor de arranque**.
+| /dev (dispositivos)   | Contiene archivos especiales que representan **dispositivos** del sistema, como discos, particiones y periféricos.
+| /etc (configuración)  | Almacena archivos de **configuración** del sistema y de las aplicaciones instaladas en el sistema.
+| /home (hogar)         | Es el directorio principal de los **usuarios** regulares.
+| /lib (bibliotecas)    | Contiene **bibliotecas** compartidas necesarias para la ejecución de programas del sistema y usuario.
+| /mnt (montaje)        | Se utiliza para **montar** sistemas de archivos adicionales o dispositivos de almacenamiento temporalmente.
+| /proc (proceso)       | Proporciona información en tiempo real sobre los **procesos** en ejecución y otros detalles del sistema.
+| /root                 | El directorio **hogar del usuario "root"**, que es el superusuario o administrador del sistema.
+| /bin (binarios del sistema) | Contiene archivos ejecutables generales.
+| /tmp (temporal)       | Directorio utilizado para almacenar archivos temporales,se borra al apagar el equipo, todos los usuarios tienen acceso a este directorio.
+| /usr (usuario)        | Contiene archivos y programas utilizados por usuarios.
+| /var (variable)       | Almacena datos variables, como registros de sistemas y archivos de bases de datos, logs de eventos del sistema.
 
 
 ```admonish info title="Participación"
-- Si acabo de instalar un servidor web en mi computadora y quiero modificarle una configuración ¿A qué directorio debo ir?
-```
-```admonish info title="Participación"
-- Si no estoy seguro de haber instalado un nuevo kernel en mi computadora ¿A qué directorio debo ir?
-```
-```admonish info title="Participación"
+- Si acabo de instalar un servidor web en mi computadora y quiero modificar su configuración ¿A qué directorio debo ir?
+- Si no estoy seguro de haber instalado una nueva versión del kernel en mi computadora ¿A qué directorio debo ir?
 - Si quiero crear un archivo pero deseo que este archivo se borre automáticamente después ¿En qué directorio debo crearlo?
-```
-```admonish info title="Participación"
-- Si mi hermano y yo tenemos cuenta en la misma computadora y me quiere mostrar un video que acaba de descargar ¿En qué directorio debería buscar?
+- Si quiero saber si alguién intentó ingresar a mi computadora durante mis vacaciones ¿En qué directorio debería buscar?
+- Si quiero saber qué discos duros tengo en el equipo ¿En que directorio debería buscar?
 ```

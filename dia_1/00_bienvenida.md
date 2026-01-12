@@ -1,11 +1,9 @@
-# Introducción
-
 # Bienvenidos al Curso: Terminal GNU/LINUX Nivel cero
 
 ## Algunos datos sobre este curso:
 
--   Esta es la quinta edición con este formato (La primera en 2023).
-
+-   Esta es la quinta edición (La primera en 2023).
+-   La primera edición hibrida
 -   Impartido por miembros del **Laboratorio de Supercómputo y
     Visualización en Paralelo**
 
@@ -15,7 +13,6 @@
 - Se encuentra ubicado en el primer piso del edificio I.
 
 ![Bienvenida](images/bienvenida/lsvp.jpeg)
-
 
 En el LSVP se encuentra una de las supercomputadoras más poderosas del país:
 
@@ -37,9 +34,18 @@ En el LSVP se encuentra una de las supercomputadoras más poderosas del país:
 
 ## Instructores para este curso
 
-Los miembros del laboratorio que van a dar este curso
+Los miembros del laboratorio que van a dar este curso y a apoyar.
 
 -   Luis Fernando Torres Hernández
 -   Diego Morales Serrano
 -   Omar Juárez Merino
 -   Erick Ricardo Martinez Martinez
+
+## Modalidad
+
+- Este es un curso práctico (Se dejan ejercicios)
+- Se habilitaron contenedores y una interfáz web (se mantendrá durante toda la semana)
+- Esta página web estará disponible durante toda la semana.
+- Hay certidficado para quien asista a todo el curso.
+- Hay visita guiada  en el laboratorio de supercomputo el jueves.
+
