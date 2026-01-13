@@ -5,10 +5,10 @@
     - [Sistemas de archivos](./dia_1/03_sistemas_archivos.md)
     - [SSH](./dia_1/02_ssh.md)
 - [Día 2]()
-    [ - [Comandos básicos](./dia_2/04_comandos_basicos.md) ]:
-    [ - [Instalación de paquetes.](./dia_2/05_instalacion_de_paquetes.md) ]:
-    - [Comandos básicos]()
-    - [Instalación de paquetes.]()
+    - [Comandos básicos](./dia_2/04_comandos_basicos.md)
+    - [Instalación de paquetes.](./dia_2/05_instalacion_de_paquetes.md)
+    [ - [Comandos básicos]() ]:
+    [ - [Instalación de paquetes.]() ]:
 - [Día 3]()
     [ - [Procesos ](./dia_3/06_procesos.md) ]:
     [ - [Filtrado](./dia_3/07_filtrado.md) ]:
