@@ -61,6 +61,7 @@ Instala las siguientes herramientas utilizando el manejador de paquetes de tu di
 
 1. Instala el paquete `fortune`.
 2. Instala el paquete `cowsay`.
-3. **Ejecución:** Prueba ambos programas juntos usando un "pipe" en tu terminal: `fortune | cowsay`.
+3. Prueba ambos programas juntos usando el siguiente comando: `fortune | cowsay`.
 
-
+1. Busca e instala el programa `moon-buggy`
+2. Ejecuta el programa `moon-buggy`
