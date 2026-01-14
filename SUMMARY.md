@@ -10,10 +10,10 @@
     [ - [Comandos básicos]() ]:
     [ - [Instalación de paquetes.]() ]:
 - [Día 3]()
-    [ - [Procesos ](./dia_3/06_procesos.md) ]:
-    [ - [Filtrado](./dia_3/07_filtrado.md) ]:
-    - [Procesos ]()
-    - [Filtrado]()
+    - [Procesos ](./dia_3/06_procesos.md) 
+    - [Filtrado](./dia_3/07_filtrado.md) 
+    [ - [Procesos ]() ]:
+    [ - [Filtrado]() ]:
 - [Día 4]()
     - [Scripts]()
     - [Visita guiada]()
