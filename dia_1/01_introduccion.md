@@ -1,61 +1,67 @@
 # Introducción
 
+- ¿Quién Utiliza Linux?
+- ¿Por qué aprender a usar Linux?
+- ¿Por qué aprender a usar la terminal de Linux?
+
 La palabra clave es
 
 __**HERRAMIENTA**__
 
 Ideas relacionadas con herramientas:
+- Reduce el esfuerzo.
+- Ahorra tiempo.
 - La herramienta adecuada para cada trabajo.
-- Perfeccionamiento de habilidades.
-- Cuidados.
-- Personalizable.
+- Una herramienta se Cuida.
+- Una herramienta se personaliza.
 
 ### El sistema operativo GNU/LINUX es una herramienta
 
 **¿Qué es un sistema operativo?**
 
 ```admonish note title="posibles respuestas"
+-   Una colección de aplicaciones que hacen que una computadora sea más
+    simple y comprensible para los programadores o usuarios.
 -   Un software que controla los recursos de la computadora:
-
     -   La memoria de la computadora
     -   los elementos que hacen procesamiento
     -   los dispositivos conectados a la computadora
 
--   Una colección de aplicaciones que hacen que una computadora sea más
-    simple y comprensible para los programadores o usuarios.
 ```
 
 ### Algunas características del SO GNU/LINUX
 
-... Y por qué les puede resultar útil aprender a usar esta herramienta.
-
-***Es de código abierto y gratuito*** \
-Se puede aprender del código fuente, se puede modificar,
-   sujeto al escrutinio (importante para la libertad).
+***Es de código abierto y gratuito***
+- Se puede aprender del código fuente, se puede modificar [ src ](https://github.com/torvalds/linux)
+- Es un esfuerzo colectivo (más de 25,000 personas) [ estadísticas ]( https://insights.linuxfoundation.org/project/korg/contributors?timeRange=past365days&start=2025-01-08&end=2026-01-08 )
+- Sujeto al escrutinio (importante para la libertad).
 
 ***Multiplataforma*** \
 Funciona en muchos dispositivos:
 - Computadoras personales
-- Servidores
+- [ Servidores ]( https://top500.org/statistics/list/ )
 - Smartphones
-- Computadores de una placa
+- Sistemas mínimos
 - Consolas de videojuegos
 
+![cloud](./images/introduccion/cloud.png)
+
 ***Estabilidad y seguridad*** \
-...Con sus respectivas condiciones.
+De acuerdo al uso que se le quiera dar (La herramienta adecuada para la tarea adecuada).
 
 ***Personalizable*** \
+Es modular (fomenta la creatividad)
 Para distintos tipos de uso.
 
 ***Tiene una estrecha relación con las universidades y el software científico***\
-Para su desarrollo profesional.
+Para uso académico.
 
 Personalmente
 - Lo que me gusta
    - Está hecho para humanos.
-   - Fácil comprensión de la estructura.
+   - Fácil comprensión de la estructura general.
    - Uno tiene el control.
-   - Sin antivirus.
+   - Tus programas viven [ mejor ]( ./images/introduccion/holapy.png )
 - Lo que no me gusta
    - Poco soporte por parte de algunos desarrolladores
    - Relación amor/odio con software privativo.
@@ -76,9 +82,10 @@ Personalmente
    - Aplicaciones de producción multimedia.
 
 - El SO GNU/linux como camino profesional
+   - Administrar la infraestructura de un centro de datos.
+   - Administrar clusters de supercómputo.
    - Administrar instancias de computo en la nube.
    - Administrar infraestructura para desarrollo de software.
-   - Administrar clusters de supercómputo.
 ```
 
 ### Formas de interactuar con el SO
@@ -86,24 +93,39 @@ Personalmente
 -   Interfaz por linea de comandos (CLI)
 
 > En un sistema GNU/Linux la forma principal de interacción es por linea de comandos.
+    La forma secundaria es por interfaces gráficas.
 
+> Los elementos clave para aprender linux es 
+> - Sistema de archivos
+> - texto
 
 ### Algunos conceptos importantes
+
+#### Kernel
+![kernel](./images/introduccion/so_kernel.png)
 
 #### Terminal
 ![Terminal](./images/introduccion/terminal.png)
 
 Uso original de las terminales
+
 ![servidor-terminal](./images/introduccion/server-terminal.png)
 
 #### Emulador de terminal
 ![emuladores](./images/introduccion/emuladores.png)
 ![emulador-terminal](./images/introduccion/emulador-terminal.png)
 
+##### Ejemploes
+- [ kitty ]( https://sw.kovidgoyal.net/kitty/ )
+- [ warp ]( https://www.warp.dev/ )
+- [ gnome ]( https://help.gnome.org/gnome-terminal/ )
+
+
 #### Ventana de terminal
 ![ventana-terminal](./images/introduccion/ventana-terminal.png)
 
 #### Interprete de comandos
+    Es un programa "Te pregunta qué quieres hacer"
 
 - Interprete de comandos (Shell)
    - sh
@@ -113,14 +135,17 @@ Uso original de las terminales
    - zsh
    - fish
 
-#### Conexión remota
-##### ssh (secure shell)
-![ssh](./images/introduccion/ssh.png)
-![pts](./images/introduccion/ssh-pts.png)
+## **Breve** historia del SO GNU/linux
+- Multics (1964)
+- Unix (1969) [video](https://youtu.be/tc4ROCJYbm0?si=UrFYmddijFfNnqWp)
+- GNU (1984) [video](https://youtu.be/sPrJvwIPW3M?si=Rl6O14DIDZaxZ2F6)
+- LINUX (1991) [Video](https://youtu.be/o8NPllzkFhE?si=EM5mUD02O3EYJsWT)
+- GNU/LINUX (1992)
 
-### Para empezar
-
-Conexión remota
-```
-    ssh usuario@direccion
+```admonish note title="En resumen"
+- GNU/Linux surge de...
+- GNU/Linux se usa en...
+- El kernel se encarga de...
+- Una terminal es...
+- Un interprete de comandos es...
 ```

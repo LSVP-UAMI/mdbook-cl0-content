@@ -1,8 +1,8 @@
 # Procesos
 ```admonish info title="Definición"
->Un proceso representa un programa en ejecución. Es la abstracción a
->través de la cual se pueden administrar y monitorear la memoria, el
->tiempo de CPU y los recursos de entrada/salida.
+Un proceso representa un programa en ejecución. Es la abstracción a
+través de la cual se pueden administrar y monitorear la memoria, el
+tiempo de CPU y los recursos de entrada/salida.
 ```
 
 ## Elementos
@@ -10,19 +10,15 @@
 El kernel registra varias piezas de información sobre cada proceso.
 Estos son algunas de los más importantes:
 
--   El mapa del espacio de direcciones del proceso
+- **IDs**: Identificadores asociados al proceso
+- **Mapa de memoria**: Su espacio de direcciones.
+- **Estado**: ¿Está corriendo, durmiendo o detenido?
+- **Prioridad**: ¿Qué tan importante es comparado con otros?
+- **Descriptores de archivo**: Archivos abiertos y purtos de red.
 
--   El estado actual del proceso (dormido, detenido, en ejecución, etc)
-
--   La prioridad de ejecución del proceso
-
--   Información sobre los recursos que ha utilizado el proceso (CPU,
-    memoria, etc.)
-
--   Información sobre los archivos y puertos de red que ha abierto el
-    proceso
-
--   El dueño del proceso
+```admonish title="Participacion"
+¿En que direcotrio se encuentra esta información?
+```
 
 ### PID: ID de proceso
 
@@ -57,9 +53,7 @@ Para mostrar todos los procesos del sistema, ejecute el comando:
 ps aux
 ```
 
-
-### Actividades
-``` admonish example title="Participación"
+``` admonish title="Participación"
 ¿Cómo muestro todos los proceso de un usuario en particular?
 ```
 
