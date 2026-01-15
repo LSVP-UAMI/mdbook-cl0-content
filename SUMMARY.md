@@ -7,13 +7,9 @@
 - [Día 2]()
     - [Comandos básicos](./dia_2/04_comandos_basicos.md)
     - [Instalación de paquetes.](./dia_2/05_instalacion_de_paquetes.md)
-    [ - [Comandos básicos]() ]:
-    [ - [Instalación de paquetes.]() ]:
 - [Día 3]()
     - [Procesos ](./dia_3/06_procesos.md) 
     - [Filtrado](./dia_3/07_filtrado.md) 
-    [ - [Procesos ]() ]:
-    [ - [Filtrado]() ]:
-- [Día 4]()
-    - [Scripts]()
-    - [Visita guiada]()
+-
+    [Día 4]()
+    - [Scripts](./dia_4/08_scripts.md)
