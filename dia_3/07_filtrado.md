@@ -85,11 +85,24 @@ Uso de los operadores `<`, `>`, `>>` , `2>` y `2>>`.
 
 ### Práctica {#_práctica}
 
-Primero, obtengamos el material. **En tu home**, copia el directorio
-**dia3** utilizando el siguiente comando:
+Primero, accede al material.
+
+```
+cp -r /tmp/material-curso/taller2 .
+
+```
+
+**dia3**  veras el siguiente contenido:
 
 ``` shell
-    cp -r /tmp/material-curso/dia3/redireccionYPipes .
+
+taller2/
+└── dia3
+    └── redireccionYPipes
+        └── red_pipes
+            ├── datos.csv
+            ├── poesia_artificial
+            └── poesia_redireccionada.
 ```
 
 Ahora realiza las siguientes actividades.
@@ -234,6 +247,9 @@ Opción importante
 | <!----> | <!----> |
 |:-------:|---------|
 | `-n N` | Muestra **N** líneas. |
+
+
+![bienvenida/yoltla](./images/cat/cat.jpg)
 
 ### Práctica {#_práctica_2}
 

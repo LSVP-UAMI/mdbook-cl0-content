@@ -121,13 +121,31 @@ DESCRIPCIÓN
 ...
 ```
 
->Antes de continuar, descargemos el material necesario.
->
->Desde el home de usuario ejecuta:
->```
->    $ sudo cp -r /tmp/material-curso/taller .
->```
->El `.` hace referencia al directorio actual.
+>Antes de continuar, hay que copiar el material a nuestro `home`  .
+
+```
+cp -r /tmp/material-curso/taller .
+
+```
+
+>La carpeta se llama `taller`, por lo que puedes ya acceder a ella.
+
+>El material es el diguiente: 
+
+```
+.
+├── archivo.txt
+├── dia-1
+│ ├── Dewey.txt
+│ └── frases.txt
+├── eje1.md
+├── eje_backup.log
+├── ejeDatos.txt
+├── ejemplo.txt
+├── eje_practica.txt
+├── ejes.txt
+└── notas_eje1.txt
+```
 
 ### ¿Dónde estamos? *`(pwd)`* 
 
