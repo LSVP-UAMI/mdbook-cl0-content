@@ -1,8 +1,8 @@
 # SSH  Secure Shell
 
-> Protcolo **criptográfico** de red para operar de forma segura en **redes inseguras**
+> Protocolo **criptográfico** de red para operar de forma segura en **redes inseguras**
 
-- Surge para reolver el problema de las redes inseguras.
+- Surge para resolver el problema de las redes inseguras.
 
 ![inseguro](./images/ssh/inseguro.png)
 
@@ -29,4 +29,8 @@
 ```
 ssh USUARIO@DIRECCION
 ```
+
+## Contenedores para este curso
+
+![astral](./images/ssh/contenedores.png)
 
