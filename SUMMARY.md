@@ -5,5 +5,7 @@
     - [Sistemas de archivos](./dia_1/03_sistemas_archivos.md)
     - [SSH](./dia_1/02_ssh.md)
 - [Día 2]()
+    - [Instalación](./dia_2/05_instalacion_de_paquetes.md)
+    - [Comandos basicos](./dia_2/04_comandos_basicos.md)
 - [Día 3]()
 - [Día 4]()

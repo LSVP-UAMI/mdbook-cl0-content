@@ -51,6 +51,7 @@ Es un servidor que funciona como un almacén de paquetes mantenido por los desar
 | Acción | **APT** (Debian/Ubuntu) | **DNF** (RedHat/Fedora) | **Pacman** (Arch) |
 | --- | --- | --- | --- |
 | **Buscar paquete** | `apt search <nombre>` | `dnf search <nombre>` | `pacman -Ss <nombre>` |
+| **Mostrar información de un paquete** | `apt show <nombre>` | `dnf info <nombre>` | `pacman -Si <nombre>` |
 | **Instalar** | `apt install <nombre>` | `dnf install <nombre>` | `pacman -S <nombre>` |
 | **Desinstalar** | `apt remove <nombre>` | `dnf remove <nombre>` | `pacman -R <nombre>` |
 | **Actualizar todo** | `apt update && apt upgrade` | `dnf update` | `pacman -Su` |
@@ -59,7 +60,7 @@ Es un servidor que funciona como un almacén de paquetes mantenido por los desar
 
 Instala las siguientes herramientas utilizando el manejador de paquetes de tu distribución:
 
-1. Instala el paquete `fortune`.
+1. Instala el paquete `fortune-mod`.
 2. Instala el paquete `cowsay`.
 3. Prueba ambos programas juntos usando el siguiente comando: `fortune | cowsay`.
 
