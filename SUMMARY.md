@@ -8,4 +8,6 @@
     - [Instalación](./dia_2/05_instalacion_de_paquetes.md)
     - [Comandos basicos](./dia_2/04_comandos_basicos.md)
 - [Día 3]()
+    - [Procesos](./dia_3/06_procesos.md)
+    - [Filtrado](./dia_3/07_filtrado.md)
 - [Día 4]()
