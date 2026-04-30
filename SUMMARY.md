@@ -11,3 +11,4 @@
     - [Procesos](./dia_3/06_procesos.md)
     - [Filtrado](./dia_3/07_filtrado.md)
 - [Día 4]()
+    - [Scripts](./dia_4/08_scripts.md)
